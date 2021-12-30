@@ -1,0 +1,19 @@
+#!/bin/bash
+
+shopt -s expand_aliases
+
+alias dp="docker ps"
+
+dp
+
+NAME="here"
+
+if [ -f ./bin/sail ] && [ -f .gitignore ] && [ -d art ]; then
+    echo "file exist /bin/bash"
+fi
+
+if [ $# -gt 0 ]; then
+    echo  $1
+fi
+
+if [];
